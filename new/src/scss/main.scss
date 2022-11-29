@@ -1,0 +1,29 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/fonts';
+
+@import 'base/reset';
+@import 'base/link';
+@import 'base/typography';
+@import 'base/utilites';
+
+@import 'components/button';
+@import 'components/badge';
+@import 'components/image';
+@import 'components/card';
+@import 'components/jumbotron';
+@import 'components/video';
+
+@import 'layout/layout';
+@import 'layout/about-us';
+@import 'layout/our-services';
+@import 'layout/navbar';
+@import 'layout/banner';
+@import 'layout/company';
+@import 'layout/our-capabilites';
+@import 'layout/pricing-plans';
+@import 'layout/review';
+@import 'layout/servers-worldwide';
+
+@import 'pages/home';

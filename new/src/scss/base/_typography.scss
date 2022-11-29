@@ -1,0 +1,110 @@
+[class^="h-"]{
+    font-style: normal;
+    font-weight: 700;
+}
+
+.h-90{
+    font-size: $f90;
+    @include respond($bdesk){
+        font-size: $f70 !important;
+    }
+    @include respond($tland){
+        font-size: $f50 !important;
+    }
+    @include respond($phone){
+        font-size: $f40 !important;
+    }
+}
+
+.h-80{
+    font-size: $f80;
+    @include respond($sdesk){
+        font-size: $f60 !important;
+    }
+}
+
+.h-50{
+    font-size: $f50;
+    @include respond($sdesk){
+        font-size: $f40 !important;
+    }
+    @include respond($tport){
+        font-size: $f30 !important;
+    }
+    @include respond($phone){
+        font-size: $f25 !important;
+    }
+}
+
+.h-40{
+    font-size: $f40;
+    @include respond($sdesk){
+        font-size: $f30;
+    }
+    @include respond($tland){
+        font-size: $f25;
+    }
+    @include respond($tport){
+        font-size: $f20;
+    }
+}
+
+.h-30{
+    font-size: $f30;
+}
+
+.h-25{
+    font-size: $f25;
+}
+
+
+
+
+[class^="p-"]{
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.p-40{
+    font-size: $f40;
+}
+
+
+.p-25{
+    font-size: $f25;
+    
+    &--menu{
+        @include respond($tland){
+            font-size: $f20 !important;
+        }
+        @include respond($tport){
+            font-size: $f25 !important;
+        }
+    }
+
+    &--button{
+        @include respond($phone){
+            font-size: $f20 !important;
+        }
+    }
+    
+    @include respond($sdesk){
+        font-size: $f20;
+    }
+    @include respond($tland){
+        font-size: $f18;
+    }
+    @include respond($tport){
+        font-size: $f16;
+    }
+
+}
+
+.p-18{
+    font-size: $f18;
+    line-height: 2.1875rem;
+    @include respond($phone){
+        font-size: $f16 !important;
+    }
+}

@@ -1,0 +1,85 @@
+.about-us {
+    display: flex;
+    padding: 100px 0;
+    &__image{
+        position: relative;
+        .person--2{
+            
+        }
+        .background{
+            background: $color6;
+            border-radius: 50%;
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -70%);
+            z-index: -9999;
+        }
+        .small-badge{
+            position: absolute;
+        }
+        .small-badge-1{
+            top: 15%;
+        }
+        .small-badge-2{
+            left: 50%;
+            top: 60%;
+        }
+    }
+
+    &__content {
+        margin-left: auto;
+        h1{
+            margin-top: 15px;
+        }
+        p{
+            margin-top: 15px;
+            max-width: 480px;
+        }
+    }
+
+    &__advantage {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: 150px 50%;
+        max-width: 500px;
+        margin-top: 30px;
+    }
+
+    &__advantage-item {
+    }
+
+    .button{
+        margin-top: 100px;
+    }
+}
+
+@include respond($sdesk){
+    .about-us{
+        flex-direction: column !important;
+        &__image{
+            
+        }
+        &__content{
+            width: 100%;
+        }
+    }
+}
+
+@include respond($phone){
+    .about-us__image{
+        .person--2{
+            width: 300px;
+            height: 500px;
+        }
+        .background{
+            width: 300px !important;
+            height: 300px !important;
+        }
+        .small-badge-2{
+            left: 30%;
+        }
+    }
+}

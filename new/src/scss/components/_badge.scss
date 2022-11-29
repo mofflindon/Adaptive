@@ -1,0 +1,64 @@
+.badge {
+    display: flex;
+    padding: 10px 10px 40px 10px;
+    max-width: 500px;
+    &__icon{
+        background: url('image/svg/1.svg' );
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-size: 80%;
+    }
+    &__description {
+        margin-top: 10px;
+        margin-left: 20px;
+        p{
+            margin-top: 10px;
+            &::before{
+            }
+        }
+    }
+
+    &--light-purple{
+        background: $color6;
+        max-height: 200px;
+    }
+    &--purple{
+        background: $color4;
+        max-height: 200px;
+    }
+}
+
+.icon2{
+    background: url('image/svg/2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+.icon3{
+    background: url('image/svg/3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.small-badge {
+    background: $color7;
+    display: inline-flex;
+    padding: 10px 5px;
+    &__icon {
+        background: white;
+        width: 45%;
+        background: url('image/svg/9.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+    }
+
+    &__description {
+        margin-left: 5px;
+        align-self: center;
+    }
+}

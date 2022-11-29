@@ -1,0 +1,129 @@
+.jumbotron {
+    background: $color7;
+    display: flex;
+    position: relative;
+    padding: 30px;
+    &__column-1 {
+        h2{
+            margin-top: 20px;
+        }
+        h1{
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+
+    &__button-group {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &__column-2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__background {
+    position: relative;
+    background-color: $color1;
+    z-index: 1;
+    overflow: hidden;
+    height: 600px;
+    width: 525px;
+    }
+    &__list{
+        position: absolute;
+        padding: 40px;
+        z-index: 4;
+        &-item{
+            &::before{
+                content: '';
+                display: inline-block;
+                background: url('image/svg/14.svg');
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__person {
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        z-index: 3;
+        width: 110%;
+        height: 105%;
+    }
+
+    &__circle {
+        overflow: hidden;
+        background: $color6;
+        border-radius: 50%;
+        width: 110%;
+        height: 100%;
+        position: absolute;
+        bottom: -15%;
+        right: -15%;
+        z-index: 2222;
+    }
+}
+
+
+@include respond($tland){
+    .jumbotron{
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+        .jumbotron__column-1{
+            width: 100%;
+        }
+        .jumbotron__column-2{
+            margin-top: 50px;
+        }
+        .jumbotron__button-group{
+            justify-content: space-around;
+        }
+    }
+}
+
+@include respond($tport){
+    .jumbotron__column-2{
+        margin-top: 50px;
+        .jumbotron__background{
+            height: 500px;
+            width: 425px;
+        }
+    }
+}
+
+@include respond($phone){
+    .jumbotron__button-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .jumbotron__column-2{
+        margin-top: 50px;
+        .jumbotron__background{
+            height: 420px;
+            width: 400px;
+        }
+    }
+}
+
+@include respond(500px){
+    .jumbotron__background{
+        height: 340px !important;
+        width: 280px !important;
+    }
+}

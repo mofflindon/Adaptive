@@ -1,0 +1,47 @@
+.gray{
+    color: $color5;
+}
+
+.blue{
+    color: $color3;
+}
+
+.black{
+    color: black;
+}
+
+.purple{
+    color: $color6;
+}
+
+.font-bold{
+    font-weight: bold !important;
+}
+
+.font-600{
+    font-weight: 600 !important;
+}
+
+.font-400{
+    font-weight: 400 !important;
+}
+
+.font-med{
+    font-weight: 500 !important;
+}
+
+.font-light{
+    font-weight: lighter !important;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.text-center{
+    text-align: center;
+}

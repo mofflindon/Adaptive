@@ -1,0 +1,96 @@
+.banner {
+    padding-top: 50px;
+    margin-top: 20px;
+    height: 925px;
+    position: relative;
+    display: flex;
+    &__content {
+        max-width: 700px;
+        h1{
+            margin-top: 15px;
+        }
+        p{
+            max-width: 500px;
+            margin-top: 15px;
+        }
+        .banner__button-group{
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .banner__rating{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-top: 10px;
+            .rating__item{
+
+            }
+            @include respond(500px){
+                justify-content: space-between !important;
+                gap: 0 !important;
+            }
+        }
+    }
+
+    &__advantages {
+        position: absolute;
+        right: 0;
+        z-index: -999;
+
+        .advantages__image{
+            position: relative;
+            z-index: -999;
+        }
+       
+        .advantages__badge-group{
+            margin-top: -18%;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+
+@include respond($tland){
+    .banner{
+        display: block;
+        height: auto !important;
+        .advantages__image{
+            display: none;
+        }
+        &__description{
+
+        }
+        .advantages{
+            margin-top: 20px;
+            position: static;
+            background: none;
+            height: 300px;
+            width: 100%;
+            &__badge-group{
+                flex-direction: row !important;
+                flex-wrap: wrap;
+                margin-top: 0 !important;
+            }
+            &__second-badge-group{
+                display: flex;
+            }
+            .badge--light-purple{
+                width: 100% !important;
+            }
+            .badge{
+                max-width: none;
+            }
+        }
+    }
+}
+
+@include respond($tport){
+    .banner__advantages{
+        height: auto !important;
+    }
+    .advantages__second-badge-group{
+        flex-direction: column !important;
+        width: 100%;
+    }
+}

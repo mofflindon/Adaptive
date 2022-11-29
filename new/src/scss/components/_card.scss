@@ -1,0 +1,17 @@
+.card {
+    background: $color2;
+    padding: 20px;
+    &__decription-list {
+        padding: 50px 0;
+    }
+
+    &__description-list-item {
+        &:not(:first-child){
+            margin-top: 30px;
+        }
+    }
+    .button{
+        margin-top: 30px;
+        width: 100%;
+    }
+}

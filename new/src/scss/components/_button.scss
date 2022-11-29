@@ -1,0 +1,31 @@
+.button{
+    padding: 1.5625rem 2.3125rem;
+    cursor: pointer !important;
+    &--transparent{
+        border: .125rem solid $color2;
+    }
+    &--purple{
+        background: $color4;
+        border: .125rem solid $color4;
+    }
+    &--blue{
+        background: $color3;
+    }
+    &--unique{
+        height: fit-content;
+    }
+}
+
+.burger-menu{
+    display: none;
+    visibility: hidden;
+    &__line{
+        display: block;
+        background: white;
+        width: 1.5625rem;
+        height: .1875rem;
+        &:not(:first-child){
+            margin-top: .3125rem;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.company {
+    background: $color7;
+    padding: 70px 0;
+    &__list {
+        display: flex;
+        margin-top: 80px;
+    }
+
+    &__list-item {
+        height: 150px;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        &:nth-child(1){
+            background: url('image/svg/4.svg');
+        }
+        &:nth-child(2){
+            background: url('image/svg/5.svg');
+        }
+        &:nth-child(3){
+            background: url('image/svg/6.svg');
+        }
+        &:nth-child(4){
+            background: url('image/svg/7.svg');
+        }
+        &:nth-child(5){
+            background: url('image/svg/8.svg');
+        }
+    }
+}
+
+
+@include respond($tport){
+    .company{
+        padding: 0 !important;
+        padding-top: 35px !important;
+        &__list{
+            align-items: center;
+            flex-direction: column !important;
+        }
+        &__list-item{
+            width: 100% !important;
+        }
+    }
+}
